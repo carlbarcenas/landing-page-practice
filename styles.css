@@ -9,50 +9,51 @@ body {
     font-family: Roboto;
 }
 
-.header {
-    background-color: #1f2937;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.header .logo-text {
-    font-size: 24px;
-}
-
-.header ul {
+ul {
     display: flex;
     list-style: none;
     gap: 24px;
+}
+
+/* 2x2 Grid */
+.top-container {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: #1f2937;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    display: flex;
+    width: 50%;
+    height: 20em;
+}
+
+.logo,
+.links {
+    height: 5em;
+}
+
+.logo {
+    padding-left: 3em;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.links,
+.hero p {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-.header,
-.intro {
-    color: #f9faf8;
-}
-
-.intro {
-    background-color: #1f2937;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: top;
-    padding-bottom: 30px;
-}
-
-.intro h2{
+.hero h2 {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
 }
 
-.intro p {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
-.intro img {
-    height: auto;
-    width: 300px;
+.hero {
+    display: flex;
+    flex-direction: column;
 }
